@@ -156,7 +156,7 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
     
 
 *   **Uppgift 2: Ta reda på exakt vilken Windows-version och build du kör**
-    *   **Gränssnitt/familj:** `Settings `
+    *   **Gränssnitt/familj:** `Inställningar `
     *   **Specifikt verktygsnamn:** `Om`
     *   **Snabbkommando (Win + R) eller CLI-kommando:** `ms-settings:about`
     
@@ -241,17 +241,17 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 
 ### 4.4 Bygg din egen MMC-konsol
 1.  **Vilka fördelar upptäckte du med att bygga en egen samlad MMC-konsol (`Mina verktyg.msc`) jämfört med att öppna flera separata administrationsverktyg?**
-    *   *Svar:* `hi ahou`
+    *   *Svar:* `Jag spararde "Mina verktyg på mitt skrivbord vilket gjorde det mycket enklare att sätta igång med ändringar på datorn. Det sparar mycket tid och det är snabbare att hitta rätt. Du kan även bygga verklådor anpassade för olika saker beroende på vilka uppgifter du har. `
 2.  **Om du försöker lägga till en snap-in som pekar mot en annan dator i nätverket istället för den lokala datorn, vad krävs rent nätverks- och säkerhetsmässigt för att det ska fungera?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Datorerna måste kunnas kopplas samman på ett nätverk och datorn som gör ändringarna måste har admin behörigheter för att kunna agera.`
 
 ### 4.5 Reflektionsfrågor (Windows navigering)
 *Svara kortfattat med egna ord.*
 
 1.  **Vilken av de fem familjerna hamnade flest av de 12 uppgifterna i? Blev du förvånad?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Det var jämnt mellan inställningarna och kontroll panelen. Det är logiskt, eftersom de flesta grundläggande ändringarna går att göra enklare via dessa gränssnitt. De övriga har färre användningsfall men är mer specialiserade för vissa ändamål. `
 2.  **Vilka uppgifter gick inte att lösa alls i det moderna gränssnittet (Settings)?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Uppgift 1, 2, 3, 9, 11, och 12. De behövde mer specialiserade funkotioner vilket tog mig till ett annat gränssnitt.`
 3.  **Vad är fördelen med en MMC-konsol jämfört med Kontrollpanelen?**
     *   *Svar:* `[Skriv med egna ord...]`
 4.  **Varför ska man vara extremt försiktig i registret när exakt samma ändring oftast går att göra i ett grafiskt gränssnitt?**
