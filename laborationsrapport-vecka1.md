@@ -388,12 +388,15 @@ Kör kommandona i din VM och logga de begärda värdena:
 *Denna bilaga är obligatorisk enligt IT-Högskolans AI-policy (v2.0).*
 
 1.  **Vilka AI-verktyg har du använt i samband med denna laboration?**
-    *   *Svar:* `[Skriv här...]`
+    *   *Svar:* `Gemini Notebook.`
 2.  **Vilken roll har AI haft i ditt arbete? (T.ex. förklarat svåra begrepp, hjälpt till med strukturen, agerat bollplank...)**
-    *   *Svar:* `[Skriv här...]`
+    *   *Svar:* `AI-verktyget har agerat som en personlig studiecoach och ett pedagogiskt bollplank. Den har också hjälpt till att strukturera mina labbrapporter genom att generera tomma Markdown mallar för mig att fylla i med mina egna svar och observationer.  `
 3.  **Hur har du själv bearbetat, kontrollerat och kvalitetssäkrat informationen som AI har bidragit med?**
-    *   *Svar:* `[Skriv med egna ord, t.ex. \"Jag har kört alla kommandon i mina egna virtuella maskiner och loggat mina faktiska nätverks- och behörighetsvärden, samt formulerat alla svar i rapporten själv.\"]`
+    *   *Svar:* `Jag har själv kört alla nätverkskommandon på min fysiska värddator och bara tillåtit den använda informationen som finns på lathundarna och powerpointsen för att hjälpa till att förklara saker. Jag har verifierat att de teoretiska förklaringarna stämmer överens med mina egna praktiska observationer.`
 4.  **Spara de viktigaste prompts (instruktioner) du gav till AI-verktyget här:**
     *   *Mina prompts:*
-        *   `[Klistra in prompt 1 här]`
-        *   `[Klistra in prompt 2 här]`
+        *   `"vad gör tracert 1.1.1.1"
+"varför ska man vara extremt försiktig i registret när exakt samma ändring oftast går att göra i ett grafiskt gränssnitt?"
+"är Vsc utforman för att kunna ge mig VG?"
+"hur får jag reda på vart denna ip länk leder till 83.178.17.130"
+"ge mig en guide på hur jag gör dessa moment själv"`
