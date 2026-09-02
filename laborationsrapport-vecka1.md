@@ -223,7 +223,7 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 
 ### 4.2 Samma sak på tre ställen (Teori)
 1.  **När du ändrade datornamn via Inställningar (Settings), kastades du över till det gamla gränssnittet eller stannade du kvar?**
-    *   *Svar:* `[Skriv ditt svar här]`
+    *   *Svar:* `Jag stannade kvar i inställningar. Jag behövde inte gå över till det gamla gränssnittet.`
 2.  **Varför tror du Microsoft har kvar två helt parallella gränssnitt (Settings och Kontrollpanelen)?**
     *   *Svar:* `[Skriv med egna ord...]`
 3.  **Vilken av de tre vägarna (Inställningar, sysdm.cpl eller PowerShell) skulle du välja om du skulle döpa om 50 datorer och varför?**
