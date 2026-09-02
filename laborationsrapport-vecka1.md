@@ -139,7 +139,7 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 5.  **En snapshot tar nästan ingen plats när den skapas men växer med tiden. Varför är det så?**
     *   *Svar:* `Datorn måsta hålla redo på alla ändringar som har skett sän snapshoten skapades, ju mer ändringar du gör desto mer saker behöver snapshotten hålla koll på. `
 6.  **Vad talar för och emot att köra kursens labbmiljö i molnet i stället för lokalt på laptopen?**
-    *   *Svar:* ``
+    *   *Svar:* `Du kan nå VM:en från vilken dator som helst och du har mer tillgång till mer kraftfulla hårdvaror. Men det kostar vanligtvist pengar att köra VM i clouden och du måste hela tiden vara uppkopllad.`
 
 ---
 
