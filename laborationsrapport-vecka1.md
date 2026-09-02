@@ -241,7 +241,7 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 
 ### 4.4 Bygg din egen MMC-konsol
 1.  **Vilka fördelar upptäckte du med att bygga en egen samlad MMC-konsol (`Mina verktyg.msc`) jämfört med att öppna flera separata administrationsverktyg?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `hi ahou`
 2.  **Om du försöker lägga till en snap-in som pekar mot en annan dator i nätverket istället för den lokala datorn, vad krävs rent nätverks- och säkerhetsmässigt för att det ska fungera?**
     *   *Svar:* `[Skriv med egna ord...]`
 
