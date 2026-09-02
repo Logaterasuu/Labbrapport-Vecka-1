@@ -225,19 +225,19 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 1.  **När du ändrade datornamn via Inställningar (Settings), kastades du över till det gamla gränssnittet eller stannade du kvar?**
     *   *Svar:* `Jag stannade kvar i inställningar. Jag behövde inte gå över till det gamla gränssnittet.`
 2.  **Varför tror du Microsoft har kvar två helt parallella gränssnitt (Settings och Kontrollpanelen)?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Settings har saknar många gamla funktioner som inte har flyttats över till det nya gränssnittet. Kontrollpanelen har även många avancerade inställningar som en vanligt användare inte skulle ha behov av. `
 3.  **Vilken av de tre vägarna (Inställningar, sysdm.cpl eller PowerShell) skulle du välja om du skulle döpa om 50 datorer och varför?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `PowerShell eftersom den ger dig möjligheten att skripta namnbyten. Det skulle spara på tid och minska risken för att göra fel.`
 
 ### 4.3 Titta i registret (Under huven)
 Öpna Registereditorn (`regedit`) på din gäst-VM och besvara följande frågor:
 
 1.  **Du navigerade till `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`. Stämde värdet på `HideFileExt` överens med hur du ställde in filändelser i Utforskaren?**
-    *   *Svar:* `[Skriv ditt svar här]`
+    *   *Svar:* `Ja, värdet var 0 vilket betyder att funktionen "HideFileExt" är avstängd`
 2.  **Vad hittade du under nyckeln `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`? Matchar det listan över autostartande program?**
-    *   *Svar:* `[Skriv ditt svar här]`
+    *   *Svar:* `De flesta program som finns under Autostart i taskmanager är också listade i registret men inte alla, jag tror det beror på att de är drivrutiner.`
 3.  **Varför ska man alltid exportera (ta backup på) en registernyckel innan man gör ändringar direkt i registret?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `I registret finns det ingen ångerknapp. Om du råkar radera eller ställa in fel värde på en nyckel så kan operativ systemet krasha eller vägra starta nästa gång. Om något skulle gå fel kan du köra din backup och återställa inställningarna. `
 
 ### 4.4 Bygg din egen MMC-konsol
 1.  **Vilka fördelar upptäckte du med att bygga en egen samlad MMC-konsol (`Mina verktyg.msc`) jämfört med att öppna flera separata administrationsverktyg?**
