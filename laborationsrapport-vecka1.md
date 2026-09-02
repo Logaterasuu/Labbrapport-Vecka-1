@@ -290,34 +290,34 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
     *   Varför är det en stor säkerhetsrisk om en SPF-lista blir för lång eller om den slutar med parametern `+all`? `Servrarna med i SPF-listan är de som har rätt att skicka post från den specifika domänen. Om listan blir lång eller om den slutar men +all så har allt fler och fler tillgång till att skicka ut mail från domänen. Det kan öppna up risken för fler phishing attacker där nätfiskare kan förfalska din e-postadress.`
 
 *   **Del 7: Fråga en annan DNS-server**
-    *   Fick du exakt samma IP-adresser till `www.google.com` när du frågade DNS-servern `1.1.1.1`? `[Skriv här...]`
-    *   Vad händer med raden "Non-authoritative answer" när du frågar domänens egen namnserver direkt? Varför blir det så? `[Skriv med egna ord...]`
+    *   Fick du exakt samma IP-adresser till `www.google.com` när du frågade DNS-servern `1.1.1.1`? `Nej, det blev nya IP-adresser.`
+    *   Vad händer med raden "Non-authoritative answer" när du frågar domänens egen namnserver direkt? Varför blir det så? `Raden försvann eftersom efterson svaret kommer från den officiella namnservern och inte min egna DNS-servers minne.`
 
 *   **Del 8: När det inte fungerar (Felsökning)**
-    *   Vilket felmeddelande indikerar att domänen inte existerar överhuvudtaget (NXDOMAIN)? `[Skriv här...]`
-    *   Vilket meddelande indikerar att domänen finns men saknar den specifika posttypen du sökte efter? `[Skriv här...]`
-    *   Vilket meddelande får du när DNS-servern inte svarar alls (Timeout)? `[Skriv här...]`
-    *   Om en användare ringer supporten och säger att en webbplats inte fungerar, vilket av dessa tre fel tyder på en felstavning och vilket tyder på att DNS-servern ligger nere? `[Skriv med egna ord...]`
+    *   Vilket felmeddelande indikerar att domänen inte existerar överhuvudtaget (NXDOMAIN)? `*** dns.google can't find finnsintedennadoman12345.se: Non-existent domain`
+    *   Vilket meddelande indikerar att domänen finns men saknar den specifika posttypen du sökte efter? `Informationen du letar efter syns inte men du får ingent fel.`
+    *   Vilket meddelande får du när DNS-servern inte svarar alls (Timeout)? `DNS request timed out.`
+    *   Om en användare ringer supporten och säger att en webbplats inte fungerar, vilket av dessa tre fel tyder på en felstavning och vilket tyder på att DNS-servern ligger nere? `Om det står "Non-existent domain" så beror det oftas på felstavning. När det står "DNS request timed out" försöker din dator kommunicera men får inget svar av DNS servern.`
 
 *   **Del 9: DNS-cachen på din dator**
-    *   Vad låg i din lokala DNS-cache innan du körde `ipconfig /flushdns`? `[Skriv här...]`
-    *   Varför syns inte de namn du just sökt efter med `nslookup` i Windows lokala DNS-cache (`ipconfig /displaydns`)? `[Skriv med egna ord...]`
+    *   Vad låg i din lokala DNS-cache innan du körde `ipconfig /flushdns`? `Alla möjliga progarm jag använde nyligen.`
+    *   Varför syns inte de namn du just sökt efter med `nslookup` i Windows lokala DNS-cache (`ipconfig /displaydns`)? `För att nslookup hoppar över windows dns-klient, windows intragerar inte med vår förfrågam och sparar därför inte det vi har sökt. `
 
 ### 5.2 Reflektionsfrågor (DNS)
 *Svara kortfattat med egna ord.*
 
 1.  **Vad är skillnaden i funktion mellan A-, PTR-, MX-, NS-, CNAME- och TXT-poster?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `A: Namn till IP-adress. PTR: IP-adress till namn. MX: Pekar ut vilka epostservrar som hanterar domänens post. NS: Visar hur många namnservrar domänen har och vem som driver de. CNAME: Visar om domänen pekar till en annan domän. TXT: Verifierar vilka servrar som kan skicka post under domän namnet.`
 2.  **Vad betyder begreppet "Non-authoritative answer", och i vilket specifikt scenario får du ett auktoritativt svar?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Det betyder att svaret kommer från din egna DNS-server och inte från den officiella namnservern.`
 3.  **Vad kan en utomstående angripare ta reda på om en organisation enbart genom att göra publika DNS-uppslagningar?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `De kan se informationen i MX-poster, NS-poster,TXT-poster och SPF-listan`
 4.  **TTL (Time to Live) anger hur länge ett DNS-svar får sparas i en cache. Vad bör du göra med TTL-värdet i god tid innan du flyttar en webbplats eller e-posttjänst till en ny server, och varför?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Sänka det så att DNS servrarna som fortfarande använder det gamla uppslaget måste göra en ny förfrågning vilket uppdaterar de till den nya servern.`
 5.  **Vad slutar fungera i ett nätverk om DNS-tjänsten går ner helt — och vilka saker fortsätter faktiskt att fungera?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Kommunikation med domän namn funkar inte längre men det går fortfarande att nå andra enheter genom deras exakta IP-adresser.`
 6.  **Varför är DNS-systemet ett så otroligt vanligt mål för cyberangrepp?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `DNS-systemet utgör grunden för kommunikationen på internet. Om man stänger ner det, stänger man ner organisationens kommunikation. `
 
 ---
 
