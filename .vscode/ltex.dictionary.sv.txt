@@ -1,0 +1,5 @@
+gateway
+I NAT-läge
+pingar
+Connected
+pinga

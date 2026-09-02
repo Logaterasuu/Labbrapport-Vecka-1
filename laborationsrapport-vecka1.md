@@ -138,7 +138,7 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
     *   *Svar:* `Host-only-läget är bäst eftersom det begränsar all kommunikation till att endast ske mellan de virtuella maskinerna och värddatorn.`
 5.  **En snapshot tar nästan ingen plats när den skapas men växer med tiden. Varför är det så?**
     *   *Svar:* `Datorn måsta hålla redo på alla ändringar som har skett sän snapshoten skapades, ju mer ändringar du gör desto mer saker behöver snapshotten hålla koll på. `
-6.  **Vad talar för och emot att köra kursens labbmiljö i molnet i stället för lokalt på laptopen?**
+6.  **Vad talar för och emot att köra kursens labbmiljö i molnet i stället för lokalt på laptoppen?**
     *   *Svar:* `Du kan nå VM:en från vilken dator som helst och du har mer tillgång till mer kraftfulla hårdvaror. Men det kostar vanligtvist pengar att köra VM i clouden och du måste hela tiden vara uppkopllad.`
 
 ---
@@ -253,13 +253,13 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 2.  **Vilka uppgifter gick inte att lösa alls i det moderna gränssnittet (Settings)?**
     *   *Svar:* `Uppgift 1, 2, 3, 9, 11, och 12. De behövde mer specialiserade funkotioner vilket tog mig till ett annat gränssnitt.`
 3.  **Vad är fördelen med en MMC-konsol jämfört med Kontrollpanelen?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `[MMC-konsolen är som en apassbar verktygslåda där du bestämmer vilka verktyg du vill ha. De kallas snap-ins och består av de verktygen du väljer. Kontrollpanelen är statisk och kan inte byggas om, där tar det lite längre tid att navigera eftersom du inte kan anpassa den av dina behov. ]`
 4.  **Varför ska man vara extremt försiktig i registret när exakt samma ändring oftast går att göra i ett grafiskt gränssnitt?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Registret har ingen ånger knapp, så om du råkar trycka in något fel så kan datorn krasha och strula.`
 5.  **Om du skulle utföra dessa inställningar på 100 datorer samtidigt i en företagsmiljö, vilken metod/familj är den enda rimliga och varför?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `[PowerShell, med det gränssnittet så kan du skripta och automatisera ändringarna som skall göras. ]`
 6.  **Windows Server har generellt färre saker i Inställningar (Settings) än en vanlig klient (Windows 11). Varför tror du att Microsoft har valt att göra så?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Windows Servrar är till för att tilhandahålla server tjänster som t.ex fildelning eller dns. De behöver inte komsument funktionerna vanlig windows har. Om du tar bort de så minskar attackytan vilket bidrar till mer säkerhet för servern. `
 
 ---
 
@@ -269,32 +269,32 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 ### 5.1 Genomförande & Loggade DNS-värden
 
 *   **Del 1: Slå upp en domän (A-post)**
-    *   Hur många IP-adresser fick du tillbaka för `www.google.com`? `[Skriv här...]`
-    *   Ändras ordningen på adresserna när du kör kommandot flera gånger? Vad tror du att det beror på? `[Skriv med egna ord...]`
-    *   Hur många IP-adresser fick du tillbaka för `iths.se`? `[Skriv här...]`
+    *   Hur många IP-adresser fick du tillbaka för `www.google.com`? `15`
+    *   Ändras ordningen på adresserna när du kör kommandot flera gånger? Vad tror du att det beror på? `Jag tror det beror på att google har så många IP-adresser. `
+    *   Hur många IP-adresser fick du tillbaka för `iths.se`? `Bara en för att ITHS är en mindre webbplats.`
 
 *   **Del 2: Reverse lookup (PTR-post)**
-    *   Vilket namn får du när du kör `nslookup 8.8.8.8`? `[Skriv här...]`
-    *   Vad händer när du kör nslookup på en av IP-adresserna du fick för `www.google.com`? Får du en felkod eller ett annat namn (t.ex. 1e100.net)? `[Skriv din observation här...]`
-    *   Varför fungerar `8.8.8.8` så konsekvent för reverse lookup medan vanliga webbadressers IP-adresser ofta inte gör det? `[Skriv med egna ord...]`
+    *   Vilket namn får du när du kör `nslookup 8.8.8.8`? `dns.google`
+    *   Vad händer när du kör nslookup på en av IP-adresserna du fick för `www.google.com`? Får du en felkod eller ett annat namn (t.ex. 1e100.net)? `[Under servern så står det "dns.google" men också error kåden "dns.google can't find 142.251.150.119: Non-existent domain"]`
+    *   Varför fungerar `8.8.8.8` så konsekvent för reverse lookup medan vanliga webbadressers IP-adresser ofta inte gör det? `Mindre behov av IP-namnöversättningar.`
 
 *   **Del 3: E-postservrar (MX-post)**
-    *   Vad styr siffran framför servernamnen (t.ex. 5, 10, 20) i MX-svaret? `[Skriv med egna ord...]`
-    *   Vilken e-postleverantör använder IT-Högskolan för `iths.se` och hur ser du det i din nslookup-utskrift? `[Skriv ditt svar och din motivering här...]`
+    *   Vad styr siffran framför servernamnen (t.ex. 5, 10, 20) i MX-svaret? `Det är prioritets värdet. Den bestämmer vilken e-postserver som kommer att kontaktas först.`
+    *   Vilken e-postleverantör använder IT-Högskolan för `iths.se` och hur ser du det i din nslookup-utskrift? `Jag skrev in "nslookup -type=MX iths.se" och där ser jag att prioritets värdet ligger på "0" och att iths.se använder outlook som sin e-postserver.`
 
 *   **Del 4: Namnservrar (NS-post)**
-    *   Hur många namnservrar har `skolverket.se`? `[Skriv här...]`
-    *   Hur många namnservrar har `iths.se`? `[Skriv här...]`
-    *   Varför har man alltid fler än en namnserver för en domän? `[Skriv med egna ord...]`
-    *   Driver organisationerna (Skolverket och IT-Högskolan) sina namnservrar själva eller ligger de hos externa leverantörer? Hur ser du det på namnen? `[Skriv ditt svar och din motivering här...]`
+    *   Hur många namnservrar har `skolverket.se`? `3`
+    *   Hur många namnservrar har `iths.se`? `2`
+    *   Varför har man alltid fler än en namnserver för en domän? `Så att DNS ska kunna fungera även om det blir fel på en av de.`
+    *   Driver organisationerna (Skolverket och IT-Högskolan) sina namnservrar själva eller ligger de hos externa leverantörer? Hur ser du det på namnen? `Det kan man se vid ändelsen av server namnet. Skolverket har namnet "ns04.skolverket.se", här kan man se att skolverket driver sina namn servrar efterrsom de har sitt eget namn vid slutet. `
 
 *   **Del 5: Alias (CNAME-post)**
-    *   Vad pekar aliaset `www.microsoft.com` på? `[Skriv här...]`
-    *   Varför väljer Microsoft att skicka sina besökare till en extern CDN-leverantör istället för en egen fysisk server? `[Skriv med egna ord...]`
+    *   Vad pekar aliaset `www.microsoft.com` på? `www.microsoft.com-c-3.edgekey.net`
+    *   Varför väljer Microsoft att skicka sina besökare till en extern CDN-leverantör istället för en egen fysisk server? `För att lätta på belastningen och ge snabbare laddningstider.`
 
 *   **Del 6: TXT-poster och SPF**
-    *   Leta upp SPF-posten för `iths.se` (börjar med `v=spf1`). Hur många olika betrodda tjänster eller IP-nät listas i den? `[Skriv här...]`
-    *   Varför är det en stor säkerhetsrisk om en SPF-lista blir för lång eller om den slutar med parametern `+all`? `[Skriv med egna ord...]`
+    *   Leta upp SPF-posten för `iths.se` (börjar med `v=spf1`). Hur många olika betrodda tjänster eller IP-nät listas i den? `4`
+    *   Varför är det en stor säkerhetsrisk om en SPF-lista blir för lång eller om den slutar med parametern `+all`? `Servrarna med i SPF-listan är de som har rätt att skicka post från den specifika domänen. Om listan blir lång eller om den slutar men +all så har allt fler och fler tillgång till att skicka ut mail från domänen. Det kan öppna up risken för fler phishing attacker där nätfiskare kan förfalska din e-postadress.`
 
 *   **Del 7: Fråga en annan DNS-server**
     *   Fick du exakt samma IP-adresser till `www.google.com` när du frågade DNS-servern `1.1.1.1`? `[Skriv här...]`
