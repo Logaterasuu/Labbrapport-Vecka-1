@@ -137,9 +137,9 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 4.  **Vilket nätverksläge skulle du välja för en labbmiljö där två VM:ar ska prata med varandra men vara helt skyddade från internet? Varför?**
     *   *Svar:* `Host-only-läget är bäst eftersom det begränsar all kommunikation till att endast ske mellan de virtuella maskinerna och värddatorn.`
 5.  **En snapshot tar nästan ingen plats när den skapas men växer med tiden. Varför är det så?**
-    *   *Svar:* ``
+    *   *Svar:* `Datorn måsta hålla redo på alla ändringar som har skett sän snapshoten skapades, ju mer ändringar du gör desto mer saker behöver snapshotten hålla koll på. `
 6.  **Vad talar för och emot att köra kursens labbmiljö i molnet i stället för lokalt på laptopen?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* ``
 
 ---
 
