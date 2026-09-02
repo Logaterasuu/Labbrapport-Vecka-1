@@ -6,14 +6,7 @@
 
 ---
 
-> ### ⚠️ STUDERANDEINSTRUKTION & AI-POLICY (IT-HÖGSKOLAN v2.0)
-> Denna mall är utformad för att hjälpa dig strukturera din laborationsrapport på ett professionellt sätt i enlighet med **IT-Högskolans AI-policy (v2.0)**. 
-> 
-> * **Självständigt arbete:** Du måste själv genomföra de praktiska momenten i din virtuella maskin (VM) och skriva alla svar med egna ord. Kopiera eller omformulera inte AI-genererad text direkt i rapporten.
-> * **Muntlig förklaring:** Du har fullt ansvar för innehållet och ska kunna förklara alla kommandon, resultat och begrepp muntligt om din utbildare ber om det.
-> * **Redovisning av AI:** I slutet av rapporten finns ett obligatoriskt avsnitt ("Bilaga: Redovisning av AI-användning") där du kort beskriver hur du har använt AI som stöd (t.ex. som strukturstöd eller för att förstå svåra begrepp).
 
----
 
 ## 1. Systemmiljö (Prerequisites)
 *Beskriv din labbmiljö och de maskiner du har använt för att genomföra laborationerna.*
