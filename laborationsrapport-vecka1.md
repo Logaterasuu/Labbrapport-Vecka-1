@@ -150,76 +150,76 @@ Beskriv kortfattat vad som hände på din skärm när du körde följande komman
 *Leta dig igenom Windows administrationsgränssnitt och fyll i dina svar under respektive uppgift. Hitta det snabbaste sättet.*
 
 *   **Uppgift 1: Ta reda på datornamnet, och byt det till något eget**
-    *   **Gränssnitt/familj:** `[Fyll i t.ex. Settings / Control Panel / MMC / Registry / CMD]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Inställningar`
+    *   **Specifikt verktygsnamn:** `System > Om`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `ms-settings:about`
+    
 
 *   **Uppgift 2: Ta reda på exakt vilken Windows-version och build du kör**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Settings `
+    *   **Specifikt verktygsnamn:** `Om`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `ms-settings:about`
+    
 
 *   **Uppgift 3: Sätt en statisk IP-adress på nätverkskortet (och ställ tillbaka till DHCP)**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Kontrollpanelen`
+    *   **Specifikt verktygsnamn:** `Nätverksanslutningar`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `ncpa.cpl`
+    
 
 *   **Uppgift 4: Skapa en lokal användare och lägg den i gruppen Users**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Datorhantering`
+    *   **Specifikt verktygsnamn:** `Lokala användare och grupper`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `lusrmgr.msc`
+    
 
 *   **Uppgift 5: Ändra UAC-nivån ett steg (och återställ)**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Kontrollpanelen`
+    *   **Specifikt verktygsnamn:** `Ändra inställningar för User Account Control`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `UserAccountControlSettings`
+    
 
 *   **Uppgift 6: Ta reda på vilka tjänster som körs, och starta om Print Spooler**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Windows Administrativa verktyg`
+    *   **Specifikt verktygsnamn:** `Tjänster`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `services.msc`
+    
 
 *   **Uppgift 7: Hitta den senaste lyckade inloggningen i händelseloggen**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Windows Administrativa verktyg`
+    *   **Specifikt verktygsnamn:** `Event Viewer`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `eventvwr.msc`
+    
 
 *   **Uppgift 8: Se diskpartitioner och ledigt utrymme på C:**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Diskhantering`
+    *   **Specifikt verktygsnamn:** `Diskhantering`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `diskmgmt.msc`
+    
 
 *   **Uppgift 9: Ändra tidszon**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Windows Inställningar`
+    *   **Specifikt verktygsnamn:** `Datum och tid`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `timedate.cpl`
+    
 
 *   **Uppgift 10: Visa filändelser och dolda filer i Utforskaren**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Utforskaren`
+    *   **Specifikt verktygsnamn:** `Mappalternativ`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `control folders`
+    
 
 *   **Uppgift 11: Se program som startar automatiskt när datorn startar**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Aktivitetshanteraren`
+    *   **Specifikt verktygsnamn:** `Aktivitetshanteraren / Autostart-appar`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `taskmgr`
+    
 
 *   **Uppgift 12: Se installerade program och avinstallera ett**
-    *   **Gränssnitt/familj:** `[Fyll i gränssnitt här]`
-    *   **Specifikt verktygsnamn:** `[Skriv verktygets namn här]`
-    *   **Snabbkommando (Win + R) eller CLI-kommando:** `[Skriv kommando här]`
-    *   **Min observation/verifiering:** `[Skriv din observation här]`
+    *   **Gränssnitt/familj:** `Kontrollpanelen`
+    *   **Specifikt verktygsnamn:** `Program och funktioner`
+    *   **Snabbkommando (Win + R) eller CLI-kommando:** `appwiz.cpl`
+    
 
 ### 4.2 Samma sak på tre ställen (Teori)
 1.  **När du ändrade datornamn via Inställningar (Settings), kastades du över till det gamla gränssnittet eller stannade du kvar?**
