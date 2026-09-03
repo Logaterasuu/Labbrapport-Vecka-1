@@ -339,7 +339,7 @@ Kör kommandona i din VM och logga de begärda värdena:
     ```cmd
     icacls Labb\hemlig.txt
     ```
-    *   *Mina loggade ursprungliga behörigheter:* `[Klistra in eller skriv behörigheterna här]`
+    *   *Mina loggade ursprungliga behörigheter:*![ `Bilder/icalcs.png`](Bilder/icalcs.png)
 
 4.  **Ge kontot Testare läsrätt (R) på filen:**
     ```cmd
