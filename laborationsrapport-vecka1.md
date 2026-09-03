@@ -1,7 +1,7 @@
 # Laborationsrapport: Vecka 1 – [Ahmed Mohamed Ali]
 **Kurs:** Operativsystem – Linux och Windows, 35 YHP
 **Moment:** Laborationer Vecka 1 (Nätverk, Virtualisering, Windows-konfiguration & Behörigheter)
-**Datum för genomförande:** [01-09-26]
+**Datum för genomförande:** [03-09-26]
 **Studerande:** [Ahmed Mohamed Ali]
 
 ---
@@ -36,7 +36,8 @@ Kör `ipconfig /all` på din värddator och fyll i dina värden nedan:
 Beskriv kortfattat vad som hände på din skärm när du körde följande kommandon och lägg till dina skärmdumpar under respektive punkt:
 
 1.  **`ping [192.168.132.1]`**
-    *   *Resultat & Observation:* `Gatewayen pingades med 4 packet`
+    *   *Resultat & Observation:* `Gatewayen pingades med 4 packet
+. `
         ![Ping Gateway](Bilder/ping_gateway.png)
 
 2.  **`tracert 1.1.1.1`**
