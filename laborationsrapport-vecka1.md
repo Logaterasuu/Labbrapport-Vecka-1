@@ -374,11 +374,11 @@ Kör kommandona i din VM och logga de begärda värdena:
 1.  **Du tilldelade först en explicit tillåtelse (läsrätt) till kontot Testare och lade därefter till en explicit blockering (deny) för samma konto. Vilken regel vinner och varför?**
     *   *Svar:* `(deny) vinner eftersom windows alltid letar efter "neka" regler först, det spelar ingen roll om det finns anvädaren har tillträde längre ner i listan.`
 2.  **Vad betyder arvsflaggorna `(OI)` och `(CI)` i icacls-utskriften?**
-    *   *Svar:* ``
+    *   *Svar:* `(OI) står för Object Inherit och (CI) står för Container inherit.`
 3.  **Vad hände med de befintliga behörigheterna på filen `hemlig.txt` i samma ögonblick som du bröt arvet på föräldramappen `Labb`?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Då raderades (I) som behörighet från alla användare. Arvet bröts och lokala regler började gälla.`
 4.  **Varför anses det allmänt inom systemsäkerhet vara betydligt farligare och mer svårfelsökt att arbeta med neka-regler (deny) än med enbart tillåt-regler (allow)?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `Nekningsregler har alltid företräde framför tillåtningsregler, så om en användare har alla nödvändiga behörigheter men det finns en nekningsregel någonstans kommer åtkomsten ändå att nekas.`
 
 ---
 
