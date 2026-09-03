@@ -357,11 +357,9 @@ Kör kommandona i din VM och logga de begärda värdena:
     ```cmd
     icacls Labb\hemlig.txt
     ```
-    *   *Mina loggade behörigheter efter deny-regeln:* `[Klistra in eller skriv behörigheterna här]`
+    *   *Mina loggade behörigheter efter deny-regeln:* `CLNT-1ALP\Testare:(DENY)(R)`
 
-8.  **Dokumentera behörigheterna grafiskt:**
-    *   *📸 Skärmdump på behörighetslistan från Säkerhetsfliken eller kommandotolken:*
-        ![NTFS icacls](bilder/ntfs_icacls.png)
+8.  **Dokumentera behörigheterna grafiskt:**![alt text](<Bilder/Icalcs after deny.png>)
 
 9.  **Städa upp efter dig:**
     ```cmd
@@ -374,9 +372,9 @@ Kör kommandona i din VM och logga de begärda värdena:
 *Svara kortfattat med egna ord.*
 
 1.  **Du tilldelade först en explicit tillåtelse (läsrätt) till kontot Testare och lade därefter till en explicit blockering (deny) för samma konto. Vilken regel vinner och varför?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* `(deny) vinner eftersom windows alltid letar efter "neka" regler först, det spelar ingen roll om det finns anvädaren har tillträde längre ner i listan.`
 2.  **Vad betyder arvsflaggorna `(OI)` och `(CI)` i icacls-utskriften?**
-    *   *Svar:* `[Skriv med egna ord...]`
+    *   *Svar:* ``
 3.  **Vad hände med de befintliga behörigheterna på filen `hemlig.txt` i samma ögonblick som du bröt arvet på föräldramappen `Labb`?**
     *   *Svar:* `[Skriv med egna ord...]`
 4.  **Varför anses det allmänt inom systemsäkerhet vara betydligt farligare och mer svårfelsökt att arbeta med neka-regler (deny) än med enbart tillåt-regler (allow)?**
